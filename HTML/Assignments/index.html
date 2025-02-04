@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Tracker</title>
+</head>
+<body>
+    <center>
+        <header id="home">
+            <h1>Personal Budget Tracker</h1>
+            <nav>
+                <a href="#home">Home</a> |
+                <a href="#addExpense">Add Expense</a> |
+                <a href="#budget">View Budget</a>
+            </nav>
+        </header>
+    
+        <section id="welcomeSection">
+            <h2>Welcome to Your Budget Tracker</h2>
+            <p>Use this tool to manage your income and expenses efficiently. Enter your financial details below and keep track of your spending.</p>
+        </section>
+    
+        <section id="addExpense">
+            <h2>Add Income / Expense</h2>
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="amount">Enter Amount:</label></td>
+                        <td><input type="number" id="amount" name="amount" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="category">Category:</label></td>
+                        <td>
+                            <select id="category" name="category">
+                                <option value="food">Food</option>
+                                <option value="transportation">Transportation</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="salary">Salary</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="description">Description: </label></td>
+                        <td><input type="text" id="description" name="description"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="date">Date:</label></td>
+                        <td><input type="date" id="date" name="date" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Type:</label></td>
+                        <td>
+                            <input type="radio" id="incomeType" name="type" value="Income" required>
+                            <label for="incomeType">Income</label>
+                            <input type="radio" id="expenseType" name="type" value="Expense">
+                            <label for="expenseType">Expense</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="submit">Add Entry</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    
+        <section id="budget">
+            <h2>Budget Summary</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Salary</td>
+                        <td>Rs.40000</td>
+                        <td>Income</td>
+                        <td>January 2025 Salary</td>
+                        <td>01-02-25</td>
+                        <td>Completed</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Food</td>
+                        <td>Rs.2000</td>
+                        <td>Expense</td>
+                        <td>Groceries for 1st week</td>
+                        <td>02-02-25</td>
+                        <td>Completed</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Transportation</td>
+                        <td>Rs.1000</td>
+                        <td>Expense</td>
+                        <td>Fuel cost for 1st week</td>
+                        <td>07-02-25</td>
+                        <td>Completed</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Entertainment</td>
+                        <td>Rs.1000</td>
+                        <td>Expense</td>
+                        <td>Movie Tickets</td>
+                        <td>06-02-25</td>
+                        <td>Completed</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Others</td>
+                        <td>Rs.5000</td>
+                        <td>Expense</td>
+                        <td>Monthly Rent</td>
+                        <td>NA</td>
+                        <td>Pending</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+        <footer>
+            <p>&copy; 2025 Personal Budget Tracker | Version 1.0</p>
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+        </footer>
+    </center>
+
+</body>
+</html>
