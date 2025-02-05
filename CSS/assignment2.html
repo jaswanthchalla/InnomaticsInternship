@@ -1,11 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brewed Awakening - Coffee Shop</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brewed Awakening - Coffee Shop</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">Brewed Awakening</div>
+                <ul class="nav-items" type="None">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <div class="welcome">Welcome to Brewed Awakening</div>
+                <p class="caption">Your perfect coffee experience awaits!</p>
+                <button onclick="location.href='#menu'" class="menu-button">View Menu</button>
+            </div>
+        </header>
+        
+        <main>
+            <section id="menu">
+                <div class="menu-heading">Our Menu</div>
+                <div class="menu-items">
+                    <div class="item">
+                        <img src="images/Espresso.jpg" alt="Espresso">
+                        <h3>Espresso</h3>
+                        <p>Rich and bold, the perfect shot of coffee.</p>
+                        <p class="price">$4.00</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/Cappuccino.jpg" alt="Cappuccino">
+                        <h3>Cappuccino</h3>
+                        <p>Perfectly frothy with a strong coffee base.</p>
+                        <p class="price">$5.00</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/Latte.jpg" alt="Latte">
+                        <h3>Latte</h3>
+                        <p>Smooth and creamy with steamed milk.</p>
+                        <p class="price">$4.50</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/Black_coffee.jpg" alt="Black Coffee">
+                        <h3>Black Coffee</h3>
+                        <p>Pure, strong, and unapologetic!.</p>
+                        <p class="price">$4.00</p>
+                    </div>
+                </div>
+
+                <div class="menu-heading">Breakfast Menu</div>
+                <div class="menu-items">
+                    <div class="item">
+                        <img src="images/sandwich.jpg" alt="Breakfast Sandwich">
+                        <h3>Breakfast Sandwich</h3>
+                        <p>Freshly made with eggs, bacon, and cheese.</p>
+                        <p class="price">$5.00</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/pancakes.jpg" alt="Pancakes">
+                        <h3>Pancakes</h3>
+                        <p>Fluffy and golden with a drizzle of syrup.</p>
+                        <p class="price">$5.50</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/croissant.jpg" alt="Croissant">
+                        <h3>Fresh Croissant</h3>
+                        <p>Buttery and flaky goodness.</p>
+                        <p class="price">$4.00</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/omlette.jpg" alt="Croissant">
+                        <h3>Omelette </h3>
+                        <p>Fluffy, hearty, and packed with goodness!</p>
+                        <p class="price">$3.50</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="about-heading">About Us</div>
+                <div class="about-flex">
+                    <div class="about-text">
+                        Welcome to <strong>Brewed Awakening</strong>, where every cup tells a story! ☕<br/><br/>
+                        We are more than just a coffee shop—we are a haven for coffee lovers seeking the perfect blend of taste, aroma, and warmth. Our carefully crafted menu features rich Espressos, velvety Lattes, frothy Cappuccinos, and bold Black Coffee, paired with delicious breakfast delights like sandwiches, pancakes, croissants, and omelettes.<br/>
+                        At Brewed Awakening, we believe in starting your day right—with fresh, high-quality ingredients, expertly brewed coffee, and a cozy ambiance that makes you feel at home. Whether you're here for your morning boost, a relaxing break, or a great conversation, we promise an experience that awakens your senses.<br/><br/>
+
+                        <i>Come, sip, and savor the awakening.</i> ☕💛
+                    </div>
+                    <div class="about-image">
+                        <img src="images/about_us.jpg" alt="About Us">
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Brewed Awakening. All Rights Reserved.</p>
+        </footer>
+    </body>
 </html>
